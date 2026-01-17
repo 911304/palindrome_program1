@@ -1,10 +1,9 @@
-def ckeck_palindrome(text):
+def check_palindrome(text):
     text = text.lower().replace(" ", "")
-    return text == text[::-1]
+    result = (text == text[::-1])   
+    return result                   
+
 
 if __name__ == "__main__":
-    user_input = input("Enter a string: ")
-    if ckeck_palindrome(user_input):
-        print(" It isPalindrome")
-    else:
-        print("It is Not Palindrome")
+    text = input("Enter a string: ")
+    print(check_palindrome(text))
